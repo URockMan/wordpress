@@ -1,0 +1,96 @@
+/*
+Theme Name: customtheme
+Author: Virat
+Author URI: https://virat.com
+Version: 1.0
+ */
+
+.utility-header {
+    top: 0;
+    width: 100%;
+    min-height: 40px;
+    background: #046B99;
+    color: #ffffff;
+}
+.utility-header {
+    background: #153554 !important;
+    color: #ffffff;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.utility-header .flex-row {
+    display: flex;
+}
+
+.group {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.utility-header .flex-row .social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.utility-header .flex-row .social-media-links .header-cagov-logo {
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.utility-header .flex-row .social-media-links a {
+    margin: 0px 10px 0 10px;
+}
+
+.utility-header a {
+    color: #ffffff;
+    display: inline-block;
+    padding: 0;
+}
+
+.et_font_icon li[class^="ca-gov-icon-"]:before, .et_font_icon li[class*=" ca-gov-icon-"]:before, [class^="ca-gov-icon-"], [class*=" ca-gov-icon-"] {
+    font-family: 'CaGov' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
