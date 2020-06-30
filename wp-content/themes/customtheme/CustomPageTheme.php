@@ -20,15 +20,15 @@ class CustomPageTheme {
         //$this->dbObj = new wpdb('root', '', 'testsite', 'localhost'); 
         $this->dbObj->select('testsite');
         
-        $this->domainList['a994f071d7ed3401cb152b1df46fc9d3-1471600098'] = "http://a994f071d7ed3401cb152b1df46fc9d3-1471600098.us-west-2.elb.amazonaws.com//index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
-        
-        $this->domainList['a23a9268ca049478c8bd5eca799ccd26-1829171198'] = "http://a23a9268ca049478c8bd5eca799ccd26-1829171198.us-west-2.elb.amazonaws.com//index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
-        
-        $this->domainList['a11417d24790447be8109179cb9f739d-1862852182'] = "http://a11417d24790447be8109179cb9f739d-1862852182.us-west-2.elb.amazonaws.com//index.php/wp-json/componentwatch/v1/getInstalledComponents/1"; 
-        
-        $this->domainList['as-cv-pub-vip-vol-wl-p-001'] = "https://as-cv-pub-vip-vol-wl-p-001.azurewebsites.net/index.php/wp-json/componentwatch/v1/getInstalledComponents/1"; 
-        
-        $this->domainList['localhost'] = "http://localhost/wordpress/index.php/wp-json/componentwatch/v1/getInstalledComponents/1"; 
+        $this->domainList['ae691f9ef93674b62871a86b2a37477e-166837189'] = "http://ae691f9ef93674b62871a86b2a37477e-166837189.us-west-2.elb.amazonaws.com/index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
+
+        $this->domainList['a98dbf1aba9f14f63a456a755ad33202-1759781684'] = "http://a98dbf1aba9f14f63a456a755ad33202-1759781684.us-west-2.elb.amazonaws.com/index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
+
+        $this->domainList['a11417d24790447be8109179cb9f739d-1862852182'] = "http://a11417d24790447be8109179cb9f739d-1862852182.us-west-2.elb.amazonaws.com//index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
+
+        //$this->domainList['as-cv-pub-vip-vol-wl-p-001'] = "https://as-cv-pub-vip-vol-wl-p-001.azurewebsites.net/index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
+
+        $this->domainList['localhost'] = "http://localhost/wordpress/index.php/wp-json/componentwatch/v1/getInstalledComponents/1";
         
         
         //$this->dbObj = new wpdb('wpadmin', 'wpadmin1234', 'wpaascmdb', 'wpaasdb.cydwunev2mr4.us-west-2.rds.amazonaws.com'); 

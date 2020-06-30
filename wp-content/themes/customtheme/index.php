@@ -48,8 +48,9 @@ $.each(table_data, function(key,obj) {
 
 $(document).ready(function() {
     var tableDomain = reloadDataTable(final_list);
-    $(document).on("change", "#domain_dropdown", function () {
+    /* $(document).on("change", "#domain_dropdown", function () {
         $('#datepicker').val('');
+		$('#timepicker').val('');
         var truncated_list = [];
         table_data = <?php echo $myJSON;?>;
         $.each(table_data, function(key,obj) {
@@ -68,17 +69,41 @@ $(document).ready(function() {
         $('#example').dataTable().fnDestroy();
         tableDomain = null;;
         tableDomain = reloadDataTable(truncated_list);
-    });
+    }); */
    
-      var availableTags = [
+     var availableTags = [
       "as-cv-pub-vip-vol-wl-p-001",
       "a994f071d7ed3401cb152b1df46fc9d3-1471600098",
       "a23a9268ca049478c8bd5eca799ccd26-1829171198",
       "a11417d24790447be8109179cb9f739d-1862852182",
+      "ae691f9ef93674b62871a86b2a37477e-166837189",
+      "a98dbf1aba9f14f63a456a755ad33202-1759781684",
       "localhost"
     ];
     $( "#domain_dropdown" ).autocomplete({
-      source: availableTags
+      source: availableTags,
+	  select: function( event, ui ) {
+		  $('#datepicker').val('');
+		$('#timepicker').val('');
+        var truncated_list = [];
+        table_data = <?php echo $myJSON;?>;
+        $.each(table_data, function(key,obj) {
+            if($.trim(key).indexOf($('#domain_dropdown').val()) != -1 || $('#domain_dropdown').val() == 'Select')
+            {
+                $.each(obj, function(k1,v1) {
+                var list = [];
+                    $.each(v1, function(k,v) {
+                        list = [k1,k,v.current_version,v.history,v.status,v.is_update,v.new_version];
+                        truncated_list.push(list);
+                    });
+                });
+            }
+        });
+        //console.log(truncated_list);
+        $('#example').dataTable().fnDestroy();
+        tableDomain = null;;
+        tableDomain = reloadDataTable(truncated_list);
+	  }
     });
    
    

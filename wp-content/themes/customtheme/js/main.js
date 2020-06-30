@@ -2,7 +2,7 @@ $(document).ready(function() {
     
 
     jQuery( "#datepicker" ).datepicker(
-    {maxDate: '-1',
+    {
      dateFormat: 'yy-mm-dd'}
     );
 
